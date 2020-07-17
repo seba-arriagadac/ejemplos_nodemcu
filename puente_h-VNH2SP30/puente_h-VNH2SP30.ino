@@ -144,9 +144,9 @@ void Reverse()
 void IncreaseSpeed()
 {
   usSpeed = usSpeed + 10;
-  if(usSpeed > 255)
+  if(usSpeed > 1020)
   {
-    usSpeed = 255;  
+    usSpeed = 1020;  
   }
   
   Serial.print("Speed +: ");
@@ -158,9 +158,9 @@ void IncreaseSpeed()
 void IncreaseSpeedFine()
 {
   usSpeed = usSpeed + 1;
-  if(usSpeed > 255)
+  if(usSpeed > 1020)
   {
-    usSpeed = 255;  
+    usSpeed = 1020;  
   }
   
   Serial.print("Speed +: ");
@@ -198,7 +198,7 @@ void DecreaseSpeedFine()
 }
 
 
-void motorGo(uint8_t motor, uint8_t direct, uint8_t pwm)         //Function that controls the variables: motor(0 ou 1), direction (cw ou ccw) e pwm (entra 0 e 255);
+void motorGo(uint8_t motor, uint8_t direct, uint16_t pwm)         //Function that controls the variables: motor(0 ou 1), direction (cw ou ccw) e pwm (entra 0 e 255);
 {
   if(motor == MOTOR_1)
   {
