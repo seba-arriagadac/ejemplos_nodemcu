@@ -11,7 +11,7 @@
 
 #define CURRENT_SEN_1 A0//A2
 
-#define EN_PIN_1 2//A0(D4)
+#define EN_PIN_1 15//A0(D8)
 
 short usSpeed = 150;  //default motor speed
 int current_CS;
